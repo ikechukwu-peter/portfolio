@@ -1,0 +1,36 @@
+.footer {
+    background: #000000;
+    color: var(--color-shiny);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--font-size-h3);
+}
+
+.footer a {color:inherit;
+text-decoration: none;}
+
+.footer__link {
+   
+    font-weight: var(--font-weight-bold);
+    /* display: none; */
+}
+
+.footer__link:hover, .social-list__link:hover {
+opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}

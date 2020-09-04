@@ -1,38 +1,316 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
+/* 
 .App-link {
   color: #61dafb;
 }
+   
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.logo {
+  background-color: aqua;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-primary:  'Oswald', sans-serif;
+  --font-family-secondary: 'Yanone Kaffeesatz', sans-serif, monospace;
+
+  --font-weight-reg: 300;
+  --font-weigth-bold: 900;
+
+  --color-light: #ffffff;
+  --color-dark: #303030;
+  --color-accent: #940505;
+  --color-orange: #190780;
+  --color-shiny: #09d6f1;
+
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body: 1rem;
+
+  
+  --box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0 .25),
+                0.125em 0.125em 0.25em rgba(0,0,0, .15)
+}
+
+@media (min-width: 800px){
+  :root {
+      
+  --font-size-h1: 4.5rem;
+  --font-size-h2: 3.75rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1.25rem;
+
+
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-primary);
+  font-size: var( --font-size-body);
+  line-height: 1.6;
+  color:var(--color-orange);
+  background: #111111;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  box-shadow: var(--box-shadow);
+}
+section {
+  padding: 5em 2em;
+}
+ strong {font-weight: var(--font-weight-bold);} 
+
+:focus {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5em 2.5em;
+  background: var(--color-shiny);
+  color: var(--color-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var (--font-weight-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+/* Typography */
+h1, h2, h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 { font-size: var(--font-size-h1)}
+h2 { font-size: var( --font-size-h2)}
+h3 { font-size: var(--font-size-h3)}
+
+.section__title {
+  margin-bottom: .25em;
+}
+.section__title--intro {
+font-weight: var(--font-weight-reg);
+font-family: var( --font-family-primary);
+
+
+}
+
+
+.section__title--intro strong {
+  display: block;
+} 
+.section__subtitle {
+  margin: 0;
+ font-size: var(--font-size-h3);
+}
+
+.section__subtitle--intro, 
+.section__subtitle--about {
+  background: var(--color-accent);
+  padding: .25em 1em;
+  font-family:var(--font-family-secondary) ;
+  margin-bottom: 1em;
+  color: white;
+
+}
+.section__subtitle--work {
+  color: rgb(233, 250, 3);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2em;
+}
+/* header */
+
+
+.intro {
+  position: relative;
+  background: #ffffff;
+}
+
+@media (min-width: 600px){
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas: 
+        "img title"
+        "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+  
+
+  .intro__img {
+    grid-area: img;
+    max-width: 250px;
+   position: relative;
+   z-index: 2;
+   border-radius: 5%;
+    
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em); 
+
+  }
+}
+
+/* My services section */
+.my-services {
+  background-color:  var(--color-dark);
+  background-image: url(./components/Images/back3.jpg );
+  background-blend-mode: multiply;
+  background-size: cover;
+  color:  var(--color-light);
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--color-light);
+  position: relative;
+}
+
+.section__title--services::after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--color-light);
+  opacity: 1.25;
+}
+ .services {
+   margin-bottom: 4em;
+ }
+@media (min-width: 800px){
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .service + .service {
+      margin-left: 2em;
+    }
+}
+
+/* About me */
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+ 
+  color: #ffffff;
+}
+
+.about-me__img {
+  box-shadow: var(--box-shadow);
+}
+@media (min-width: 600px) {
+    .about-me {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      grid-template-areas: 
+        "title img"
+        "subtitle img"
+        "text img";
+      grid-column-gap: 2em;
+    }
+      
+    .section__title--about {
+      grid-area: title;
+    }
+    .section__subtitle--about {
+      grid-column: 1/-1;
+      grid-row: 2;
+      position: relative;
+      left: -1em;
+      width: calc(100% + 2em);
+      padding-left: 1em;
+      padding-right: calc(200px + 4em);
+    }
+    .about-me__img {
+      grid-area: img;
+      position: relative;
+      z-index: 2;
+      
+      
+    }
+}
+
+/* My Work */
+
+.my-work {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+
+.portfolio__item {
+  /* background: var(--color-orange); */
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: 
+  transform 750ms cubic-bezier(.5, 0, .5, 1),
+  opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.2);
+  opacity: .75;
+}
+/* }
+.portfolio {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+
