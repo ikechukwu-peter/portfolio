@@ -7,6 +7,7 @@ import recipes from './Images/recipe.JPG'
 import gpa from './Images/gpa.JPG'
 
 
+
 const Intro = () => {
     return (
         <div>

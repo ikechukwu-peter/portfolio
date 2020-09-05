@@ -14,9 +14,22 @@ header {
 
  .logo {
      max-width: 100px;
-     color: red;
+   
  }
+@media (max-width: 320px){
+    .logo {
+        width: 4em;
+        height: 19px;
+    }
+}
 
+
+@media (min-width: 321px){
+    .logo {
+        width: 7em;
+        height: 25px;
+    }
+}
  .nav {
      position: fixed;
      background: var(--color-dark);

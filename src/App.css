@@ -299,18 +299,32 @@ font-family: var( --font-family-primary);
   transform: scale(1.2);
   opacity: .75;
 }
-/* }
-.portfolio {
-  padding: 0 2em 2em;
-  max-width: 1000px;
-  margin: 0 auto;
+
+/* responsiveness  */
+@media (max-width: 300px){
+
+  .section__title--intro {
+  font-size: 1.5em;
+  }
+ 
 }
 
-.portfolio-item-individual p {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-} */
+@media (max-width: 350px){
+ 
+  .portfolio__img {
+    width: 15em;
+    
+    
+  }
+   
+}
 
+@media (max-width: 310px){
+ 
+  .portfolio__img {
+    width: 13em; 
+  }
+   
+}
 
 
