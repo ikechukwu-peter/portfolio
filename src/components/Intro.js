@@ -15,7 +15,7 @@ const Intro = () => {
                 Hi, I am <strong> Ikechukwu Peter</strong>
             </h1>
             <p className="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src={peter} alt="a picture of Ikechukwu Peter" className="intro__img" />
+            <img src={peter} alt="Ikechukwu Peter standing besides a car" className="intro__img" />
             </section>
 
             {/* My services */}
