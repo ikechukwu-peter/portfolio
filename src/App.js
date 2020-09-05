@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 
 import Intro from './components/Intro';
 import Footer from './components/Footer';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
+const App = () => {
+  
+  useEffect(() => {
+    Aos.init({duration: 2000})
+}, []);
 
-function App() {
   return (
   
     <div className="App">

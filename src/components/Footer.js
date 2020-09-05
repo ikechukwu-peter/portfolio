@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.css'
 import {FaGithub, FaFacebook, FaTwitter, FaLinkedin, FaEnvelope} from 'react-icons/fa';
 
-
-
 const Footer = () => {
+
+   
+
     return (
-        <div>
-            <footer className="footer">
+        <div data-aos="slide-up">
+            <footer className="footer" >
               
                 <ul className="social-list">
                 <li className="social-list__item">

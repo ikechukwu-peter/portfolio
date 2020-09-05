@@ -19,16 +19,19 @@ const Header = () => {
 
 
 
+
+
+
     return (
         <div className="header">
              <header>
-             <img className="logo"  alt="" src={logo}/>
+             <img className="logo"  alt="" src={logo} data-aos="flip-up"/>
                
                  <button className="nav-toggle" aria-label="toggle navigation" onClick={handleToggle}>
                      <span className="hamburger"></span>
                  </button>
                  <nav className="nav">
-                     <ul className="nav__list" onClick={removeToggle}>
+                     <ul className="nav__list" onClick={removeToggle} >
                          <li className="nav__item"><a href="#home"  className="nav__link">Home</a></li>
                          <li className="nav__item"><a href="#services" className="nav__link">My Services</a></li>
                           <li className="nav__item"><a href="#about" className="nav__link">About me</a></li>
