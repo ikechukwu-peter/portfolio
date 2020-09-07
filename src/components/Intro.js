@@ -1,10 +1,10 @@
 import React from 'react';
-import peter from './Images/peter.png';
-import peter01 from './Images/dev_pete.jpeg';
-import weather from './Images/weather.JPG'
-import firegram from './Images/firegram.JPG'
-import recipes from './Images/recipe.JPG'
-import gpa from './Images/gpa.JPG'
+import peter from './Images/peter.jpg';
+import peter01 from './Images/dev_pete.jpg';
+import weather from './Images/weather.jpg'
+import firegram from './Images/firegram.jpg'
+import recipes from './Images/recipe.jpg'
+import gpa from './Images/gpa.jpg'
 
 
 
@@ -13,11 +13,11 @@ const Intro = () => {
     return (
         <div>
              <section className="intro" id="home" >
-            <h1 className="section__title section__title--intro">
+            <h1 className="section__title section__title--intro" >
                 Hi, I am <strong > Ikechukwu Peter</strong>
             </h1>
             <p className="section__subtitle section__subtitle--intro" data-aos="slide-up">front-end dev</p>
-            <img src={peter} alt="Ikechukwu Peter standing besides a car" className="intro__img" />
+            <img  src={peter} alt="Ikechukwu Peter standing besides a car" className="intro__img" />
             </section>
 
             {/* My services */}
@@ -34,7 +34,7 @@ const Intro = () => {
                 <div className="service" data-aos="fade-down">
                     <h3>E-Commerce</h3>
                     <p> Many business need online presence and online store , I render my service by building great E-commerce sites, 
-                        SEO friendly and payment gateway efficiently integrated.
+                        SEO friendly with payment gateway efficiently integrated.
                         
                      </p>
                 </div>
@@ -75,8 +75,8 @@ const Intro = () => {
             </section> 
                         {/* My Works */}
              <section className="my-work" id="works">
-                <h2 className="section__title" data-aos="flip-left">My Works</h2>
-                <p className="section__subtitle section__subtitle--work" data-aos="flip-right"> A selection of my range of works</p>
+                <h2 className="section__title" data-aos="slide-downss">My Works</h2>
+                <p className="section__subtitle section__subtitle--work" data-aos ="slide-up"> A selection of my range of works</p>
                 
                 <div className="portfolio" id="work" data-aos="fade-up">
 

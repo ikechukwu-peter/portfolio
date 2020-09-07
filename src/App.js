@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense} from 'react';
 import './App.css';
 import Header from './components/Header';
 
-import Intro from './components/Intro';
 import Footer from './components/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+
+
+const Intro = lazy(()=> import ('./components/Intro'))
 
 const App = () => {
   
@@ -17,10 +19,12 @@ const App = () => {
   
     <div className="App">
      <Header />
-     <Intro/>
-     
-      <Footer />
-       
+     <Suspense fallback={'Loading'} >
+              <Intro/>
+              
+              <Footer /> 
+     </Suspense>
+    
     </div>
     
   );

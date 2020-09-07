@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Header.css';
-import logo from './Images/portlogo.PNG'
+import logo from './Images/portlogo.jpg'
 
 
 
