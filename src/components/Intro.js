@@ -1,12 +1,5 @@
-import React from 'react';
-import peter from './Images/peterImg.jpg';
-import peter01 from './Images/dev_peteImg.jpg';
-import weather from './Images/weatherImg.jpg'
-import firegram from './Images/firegramImg.jpg'
-import recipes from './Images/recipeImg.jpg'
-import gpa from './Images/gpaImg.jpg'
-
-
+import React, {lazy} from 'react';
+import {peter, peter01, weather, gpa, recipes, firegram} from './Image'
 
 const Intro = () => {
 
@@ -92,8 +85,7 @@ const Intro = () => {
                    <a href="https://gpa-cal.netlify.com" className="portfolio__item">
                        <img src={gpa} alt="Click to visit my GPA calculator site" className="portfolio__img" />
                    </a>
-                   
-                 
+    
                </div>
             
 

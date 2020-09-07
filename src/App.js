@@ -2,12 +2,14 @@ import React, { useEffect, lazy, Suspense} from 'react';
 import './App.css';
 import Header from './components/Header';
 
-import Footer from './components/Footer';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
+const Footer = lazy(()=> import ('./components/Footer'))
 
 const Intro = lazy(()=> import ('./components/Intro'))
+
 
 const App = () => {
   
