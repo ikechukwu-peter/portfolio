@@ -1,4 +1,4 @@
-import React, {lazy} from 'react';
+import React from 'react';
 import {peter, peter01, weather, gpa, recipes, firegram} from './Image'
 
 const Intro = () => {
