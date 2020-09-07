@@ -1,10 +1,10 @@
 import React from 'react';
-import peter from './Images/peter.jpg';
-import peter01 from './Images/dev_pete.jpg';
+import peter from './Images/peterImg.jpg';
+import peter01 from './Images/dev_peteImg.jpg';
 import weather from './Images/weatherImg.jpg'
-import firegram from './Images/firegram.jpg'
-import recipes from './Images/recipe.jpg'
-import gpa from './Images/gpa.jpg'
+import firegram from './Images/firegramImg.jpg'
+import recipes from './Images/recipeImg.jpg'
+import gpa from './Images/gpaImg.jpg'
 
 
 

@@ -187,7 +187,7 @@ font-family: var( --font-family-primary);
 /* My services section */
 .my-services {
   background-color:  var(--color-dark);
-  background-image: url(./components/Images/back3.jpg );
+  background-image: url(./components/Images/background.jpg );
   background-blend-mode: multiply;
   background-size: cover;
   color:  var(--color-light);
