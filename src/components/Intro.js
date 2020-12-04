@@ -9,7 +9,7 @@ const Intro = () => {
             <h1 className="section__title section__title--intro" >
                 Hi, I am <strong > Ikechukwu Peter</strong>
             </h1>
-            <p className="section__subtitle section__subtitle--intro" data-aos="slide-up">front-end dev</p>
+            <p className="section__subtitle section__subtitle--intro" data-aos="slide-up">FullStack Developer</p>
             <img  src={peter} alt="Ikechukwu Peter smiling" className="intro__img" />
             </section>
 
@@ -58,8 +58,8 @@ const Intro = () => {
                 </p>
                  <p>
                                                 
-                   I work with the following frontend technologies, HTML, CSS, Boostrap, SASS,
-                   Javascript and ReactJs.
+                   I work with the following technologies, HTML, CSS, Boostrap, SASS,
+                   Javascript, ReactJs and Nodejs.
                  </p>
                    
                 </div>
